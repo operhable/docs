@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/5b80e0051f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<header class="main-header">
+    <nav>
+        <ul class="left-menu">
+            <li><a href="inicio.html" id="inicio">Inicio</a></li>
+            <li><a href="quien-soy.html" id="quien-soy">Quién soy</a></li>
+            <li><a href="animate.html" id="animate">Animaate</a></li>
+        </ul>
+        <div class="logo">
+            <a href="main.html"><img src="" alt="Marca"></a>
+        </div>
+        <div class="right-menu">
+            <a href="galeria.html" class="gallery-button">Ver galería</a>
+        </div>
+    </nav>
+    <script>// Obtener las palabras del menú izquierdo
+        const inicio = document.getElementById('inicio');
+        const quienSoy = document.getElementById('quien-soy');
+        const animate = document.getElementById('animate');
+
+        // Función para hacer las palabras del menú izquierdo negrita al pasar el mouse
+        function cambiarNegrita(event) {
+            event.target.style.fontWeight = 'bold';
+        }
+
+        // Función para quitar la negrita al quitar el mouse de las palabras
+        function quitarNegrita(event) {
+            event.target.style.fontWeight = 'normal';
+        }
+
+        // Agregar eventos de mouseover y mouseout para las palabras del menú izquierdo
+        inicio.addEventListener('mouseover', cambiarNegrita);
+        inicio.addEventListener('mouseout', quitarNegrita);
+        quienSoy.addEventListener('mouseover', cambiarNegrita);
+        quienSoy.addEventListener('mouseout', quitarNegrita);
+        animate.addEventListener('mouseover', cambiarNegrita);
+        animate.addEventListener('mouseout', quitarNegrita);
+    </script>
+
+</header>
+
+<body>
+    <article>
+        <h1>Buen aventurados</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto totam itaque cupiditate odit facilis atque, ipsa numquam quisquam, culpa, voluptatem explicabo saepe? Quidem, qui sequi!</p>
+    </article>
+    <span>
+        <p>siamo in arribo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic</p>
+    </span>
+
+</body>
+<footer class="main-footer">
+    <div class="left-section">
+        <div class="logo">
+            <img src="img/img2.png" alt="Logo de la marca">
+        </div>
+        <p class="slogan">Explorando el mundo, creando memorias.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+        </div>
+    </div>
+
+    <div class="right-section">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45901.073054510794!2d10.100625655712893!3d44.02517467541772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d508d15db58463%3A0xab0f854db9fbaab2!2s54100%20Massa%2C%20Massa%20y%20Carrara!5e0!3m2!1ses-419!2sit!4v1699998349115!5m2!1ses-419!2sit"
+                width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            Estamos los 7 dias las 24hs.
+        </div>
+        <div class="columns">
+            <div class="column">
+                <h3>Nosotros</h3>
+                <!-- Contenido sobre nosotros -->
+            </div>
+            <div class="column">
+                <h3>Destino</h3>
+                <!-- Contenido sobre el destino -->
+            </div>
+            <div class="column">
+                <h3>Contactanos</h3>
+                <span>fasdf</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
