@@ -1,0 +1,119 @@
+@media (max-width: 768px) {
+    header, footer {
+      font-size: 18px;
+    }
+  }
+
+.main-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-family: 'Satisfy', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-menu,
+.right-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-menu li,
+.right-menu {
+    margin-right: 20px;
+    font-size: 23px;
+}
+
+.logo img {
+    max-width: 4em;
+    /* Ajusta el tamaño de la imagen del logo según tus necesidades */
+}
+
+.gallery-button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.gallery-button:hover {
+    background-color: #d32f2f;
+}
+
+body {
+    background-color: beige;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-footer {
+    font-family: 'Satisfy', cursive;
+    background-color: #336699;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img {
+    max-width: 100px;
+margin-left: 25%;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 23px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    /* Espacio entre los iconos */
+}
+
+
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: calc(33.33% - 10px);
+    /* Calcula el ancho de las columnas con espacio entre ellas */
+    margin-right: 10px;
+    /* Otros estilos para las columnas */
+}
